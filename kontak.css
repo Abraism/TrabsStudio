@@ -1,0 +1,284 @@
+@font-face {
+  font-family: 'Photograph';
+  src: url(font/Photograph\ Signature.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url(font/Poppins-SemiBold.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;;
+}
+@font-face {
+  font-family: 'Alterday';
+  src: url(font/Alterday.otf) format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Mayonice';
+  src: url(font/Mayonice.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Coolvetica';
+  src: url(font/Coolvetica\ Rg.otf) format('opentype');
+  font-weight:normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Baret';
+  src: url(font/Barett\ Street.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, #ffffff,#F1F0E4,#7b9096);
+  background-size: cover;       
+  background-position: center;  
+  background-attachment: fixed;  
+  color: white;           
+}
+
+/* HEADER + NAV */
+header {
+  background-color: transparent;
+  padding: 15px 40px;
+  color: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-family: 'Photograph';
+  font-size: 40px;
+  margin: 0;
+  margin-left: 60px;
+  font-weight: 300;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  margin-right: 60px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color:#222;
+  padding: 8px 20px;
+  font-size: 18px;
+  font-family: 'Coolvetica';
+  background-image: linear-gradient(#222, #222);
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .25s ease;
+}
+
+nav ul li a:hover {
+  background-size: 100% 2px;
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;   
+  align-items: center;       
+  gap: 20px;                 
+  padding: 30px;
+  color: #222;
+  margin-top: 60px
+}
+
+.kkiri {
+  height: 300px;
+  display: flex;
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.kkanan {
+  padding :30px;
+  width: 800px;
+  font-family: 'Inter';
+  font-size: 25px;
+}
+
+.slogan {
+  font-weight: 900;
+  font-size: 28px;
+  display: block;
+  margin-bottom: 10px;
+  font-family: 'Inter';
+  color: #222;
+}
+
+.wesmanut{
+  width: 60%;
+  text-align: right;
+  font-size:40px;
+  color: #222;
+  font-family: 'Coolvetica';
+  font-weight: 600;
+}
+.wesmanuty{
+  width: 60%;
+  text-align: center;
+  font-size:40px;
+  color: #222;
+  font-family: 'Coolvetica';
+  font-weight: 600;
+}
+
+.datadiri {
+  margin: 20px auto;
+  width: 60%;
+  display: flex;
+  flex-direction: column; /* ini bikin berjejer ke bawah */
+  background-color: #a1a1a161;
+  padding: 5px;
+  border-radius: 12px;
+  white-space: nowrap;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.7);
+}
+
+.hutem {
+  display: flex;
+  align-items: center;
+  
+}
+
+.datanya {
+  width: 150px;
+  font-family: 'Inter';
+  font-size: 20px;
+  color: #222;
+  border-radius: 12px;
+  padding: 4px;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 12px;
+}
+
+.isidata {
+  color: #222;
+  font-size: 18px;
+  font-family: 'Inter';
+}
+
+.skill-item {
+  margin: 20px auto;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.skill-name {
+  width: 150px;
+  font-family: 'Inter';
+  font-size: 20px;
+  color: #fff;
+  background-color: #222;
+  border-radius: 12px;
+  padding: 4px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.skill-bar {
+  flex-grow: 1;
+  height: 35px;
+  background: rgba(255,255,255,0.5);
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.skill-fill {
+  height: 100%;
+  background: #222;
+  font-family: 'Inter';
+  font-weight: bold;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  transition: width 0.8s ease;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.section {
+  font-size: 50px;
+  color: #222;
+  margin-top: 200px;
+  text-align: center;
+  font-family: 'Coolvetica';
+  font-weight: 300;
+}
+
+.pengalaman {
+  padding: 20px;
+  background-color: #222;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 80px;
+  font-family: 'Coolvetica';
+}
+.D1 {
+  margin: 20px auto 0; 
+  background-color: #22222275;
+  padding: 20px;
+  width: 80%; 
+  text-align: center;  
+  border-radius: 8px;
+}
+
+.de1 {
+  padding :30px;
+  width: auto;
+  font-family: 'Inter';
+  font-size: 20px;
+  text-align: left;
+}
+
+.j1 {
+  font-weight: 900;
+  font-size: 28px;
+  display: block;
+  margin-bottom: 10px;
+  font-family: 'Inter';
+  color: #222;
+  text-align: left;
+}
+
+.vektor {
+text-align: center;
+margin-bottom: 300px;
+}
+
+.vektor img {
+  width: 80px;
+  margin: 30px;
+  transition: 0.5s;
+}
+
+.vektor img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}

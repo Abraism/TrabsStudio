@@ -1,0 +1,223 @@
+/* FONT IMPORT */
+@font-face {
+  font-family: 'Photograph';
+  src: url(font/Photograph\ Signature.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url(font/Poppins-SemiBold.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;;
+}
+@font-face {
+  font-family: 'Alterday';
+  src: url(font/Alterday.otf) format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Mayonice';
+  src: url(font/Mayonice.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Coolvetica';
+  src: url(font/Coolvetica\ Rg.otf) format('opentype');
+  font-weight:normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Baret';
+  src: url(font/Barett\ Street.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url(font/Inter-VariableFont_opsz\,wght.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* GENERAL STYLE */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, #3E3F29,#3E3F29,#7D8D86);
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+/* HEADER + NAV */
+header {
+  background-color: transparent;
+  padding: 15px 40px;
+  color: #F1F0E4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-family: 'Photograph';
+  font-size: 40px;
+  margin: 0;
+  margin-left: 60px;
+  font-weight: 300;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  margin-right: 60px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color:#F1F0E4;
+  padding: 8px 20px;
+  font-size: 18px;
+  font-family: 'Coolvetica';
+  background-image: linear-gradient(#F1F0E4, #F1F0E4);
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .25s ease;
+}
+
+nav ul li a:hover {
+  background-size: 100% 2px;
+}
+
+
+/* INTRO SECTION */
+.intro-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 60px;
+    margin-top: 20px;
+}
+
+.intro-left {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.intro-box {
+    padding: 25px;
+    margin-left: 120px;
+}
+
+.intro-short h2 {
+    font-family: 'Coolvetica';
+    font-size: 80px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #F1F0E4;
+}
+
+.intro-short p {
+    font-family: 'Poppins';
+    font-size: 25px;
+    color: #F1F0E4;
+}
+
+/* FOTO KANAN */
+.intro-right img {
+    margin-right: 60px;
+    width: 610px;;
+    border-radius: 120px 0 120px 0;
+}
+
+/* Gettouch */
+.gettouch {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px;
+    margin-top: 20px;
+    margin-bottom: 180px;
+}
+
+.gtwrap {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.gtbox {
+    padding: 25px;
+    text-align: center;
+}
+
+.gttext h3{
+    text-align: center;
+    font-family: 'Coolvetica';
+    font-size: 60px;
+    font-weight: 500;
+    margin: 10px;
+    letter-spacing: 1px;
+    color: #F1F0E4;
+}
+
+.gttext d{
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 25px;
+    font-weight: 300;
+    margin: 20px;
+    color: #F1F0E4;
+}
+
+/* ICON MENU WRAP */
+.icon-menu {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.icon-item {
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Inter';
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.icon-item img {
+    color: aquamarine;
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin: 20px ;
+    transition: transform 0.3s ease;
+}
+
+.icon-item:hover img {
+    transform: scale(1.1);
+}
+
+.icon-item span {
+    display: block;
+    margin-top: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
